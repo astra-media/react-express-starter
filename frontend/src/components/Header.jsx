@@ -6,7 +6,7 @@ const Header = () => {
     <Navbar bg='dark' data-bs-theme='dark'>
       <Container>
         <Navbar.Brand as={Link} to='/'>
-          React Express Starter Kit
+          React + Express Starter Kit
         </Navbar.Brand>
         <Nav className='ms-auto'>
           <Nav.Link as={Link} to='/'>

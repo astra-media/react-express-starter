@@ -9,7 +9,7 @@ const features = [
   },
   {
     name: 'Features',
-    about: 'Express.js, React + Vite, Redux toolkit...',
+    about: 'Express, React + Vite, Redux Toolkit, and react-router-dom',
   },
 ]
 

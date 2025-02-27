@@ -1,9 +1,10 @@
 import Meta from '../components/Meta'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Button, Form, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { useGetFeaturesDetailsQuery } from '../slices/featuresApiSlice'
 import { addToLocalList, clearLocalList } from '../slices/localListSlice'
+import { Link } from 'react-router-dom'
 
 const FeaturesScreen = () => {
   const [list, setList] = useState('')
@@ -20,23 +21,24 @@ const FeaturesScreen = () => {
   }
   const { listItems } = useSelector((state) => state.localList)
 
-  // useEffect(() => {}, [data])
-
   return (
     <>
-      <Meta title='data' />
+      <Meta title='Features' />
       {isLoading ? (
         <h1>Loading..</h1>
       ) : error ? (
         <p>Error: {error?.data?.message || 'Something went wrong'}</p>
       ) : (
         <div className='mb-2'>
+          <Link to={'/'}>
+            <p>Go back to home screen</p>
+          </Link>
           {backendData ? (
             <>
               <h3>Data from backend:</h3>
               <ul>
-                {backendData.features.length > 0 &&
-                  backendData.features.map((currElement, index) => (
+                {backendData.length > 0 &&
+                  backendData.map((currElement, index) => (
                     <li key={index}>
                       <strong>{currElement.name}: </strong>
                       <span>{currElement.about}</span>
