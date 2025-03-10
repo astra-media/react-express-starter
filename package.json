@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React express started kit",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
