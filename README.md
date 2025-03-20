@@ -84,8 +84,13 @@ npm run build  # Bundles the app and creates a 'dist' directory
 | `npm run dev`    | Runs both frontend and backend in development mode             |
 | `npm run build`  | Bundles the frontend for production                            |
 
+## Related Projects
+
+- **[nextjs-express-starter][2]** – A Next.js full-stack template with a custom Express server
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE][1] file for details.
 
 [1]: https://github.com/astra-media/react-express-starter/blob/main/License 'LICENSE'
+[2]: https://github.com/astra-media/nextjs-express-starter.git 'nextjs-express-starter'

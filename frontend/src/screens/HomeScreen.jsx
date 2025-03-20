@@ -110,6 +110,17 @@ const HomeScreen = () => {
           </li>
         </ul>
 
+        <h2>Related Projects</h2>
+        <p>
+          <Link
+            to={'https://github.com/astra-media/nextjs-express-starter.git'}
+            target='_blank'
+          >
+            nextjs-express-starter
+          </Link>{' '}
+          – A Next.js full-stack template with a custom Express server.
+        </p>
+
         <h2>License</h2>
         <p>
           This project is licensed under the MIT License. See the{' '}
